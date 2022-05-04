@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buyanything.com</title>
+    <link rel="stylesheet" href="bootstrp4/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrp4/fontawesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 top  bg-red">
+                <h5 class="float-right"> <a href="aboutus.html">Explore The Platform </a> <span><a href="log.html"> Log In or
+                            Register
+                        </a></span>
+                </h5>
+            </div>
+            <div class="col-sm-11 mx-auto bg-white">
+                <nav class="navbar  navbar-expand-sm">
+
+                    <ul class="navbar-nav  top_nav ">
+                        <li class="nav-item">
+                            <a href="index.html" class="navbar-brand"> Buyanything </a>
+                        </li>
+
+                        <li class="nav-item group_nav">
+
+
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-red"><select name="All" id="products">
+                                            <option value="">All</option>
+                                            <option value="">Automobile</option>
+                                        </select></span>
+                                </div>
+                                <input type="text" class="form-control nav_form" c
+                                    placeholder="Search for your products">
+                                <div class="input-group-prepend input1">
+                                    <a href=""><i class="fa fa-search p-2"> </i></a>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                    
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-sm-12 mx-auto bg-success">
+                <nav class="navbar navbar-expand-sm ">
+                    <ul class="navbar-nav ml-5 homenav">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggler-icon" href="#" id="navbardrop" data-toggle="dropdown">
+                                All Product
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="allproduct.html"><i class="fa fa-phone"></i> <span class="ml-3">Phone
+                                        Accessories</span> </a>
+                                <a class="dropdown-item" href="allproduct.html"><i class="fa fa-search"></i> <span class="ml-3">Health
+                                        and Beauty</span> </a>
+                                <a class="dropdown-item" href="allproduct.html"><i class="fa fa-search"></i> <span class="ml-3">Food
+                                        and Groceriees</span> </a>
+                                <a class="dropdown-item" href="allproduct.html"><i class="fa fa-search"></i> <span class="ml-3">Home
+                                        and Garden </span> </a>
+                                <a class="dropdown-item" href="allproduct.html"><i class="fa fa-search"></i> <span
+                                        class="ml-3">Fashion and Clothing </span> </a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link ml-3"> Home </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="allproduct.html" class="nav-link"> Shop </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="aboutus.html" class="nav-link"> About Us </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="faq.html" class="nav-link"> FAQ </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link"> Contact Us </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto pr-5 homenav">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-toggle="dropdown" class="nav-link"> Cart (<span id="counter">0</span>) </a>
+                            <ul class="dropdown-menu" style="width:300px;left:auto;right:0;">
+                                <h4 class="p-3">cart (<span id="counter2">0</span>)</h4>
+                                <div id="cart"></div>
+                                <button class="btn btn-danger" onclick="clearCart()"> Clear </button>
+
+                                <a href="cart.html" class="btn btn-success"  > Buy </a>
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="cart.html" class="nav-link"> Recently Viewed </a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                
+                <nav class="navbar navbar-expand-sm d-block d-sm-none fixed-bottom mobile p-0">
+
+                    <div class="row">
+                        <div class="col-3 p-0 text-center">
+
+                            <a href="index.html"> <i class="fa fa-home "></i>
+                                
+                            </a>
+                        </div>
+                        <div  class="col-3 p-0 text-center">
+                            <a href="cart.html"> <i class="fa fa-cart-plus "></i><small id="countermobile2">(0)</small>
+                            </a>
+                        </div>
+                        <div  class="col-3 p-0 text-center">
+                            <a href="contact.html"> <i class="fa fa-credit-card "></i>
+                            </a>
+                        </div>
+
+                        <div  class="col-3 p-0 text-center">
+                            <a href="aboutus.html"> <i class="fa fa-user"></i>
+                            </a>
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </nav>
+
+            </div>
+        </div>
+
+
+
+
+
+    </header>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 mx-auto  mt-5">
+               
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="" id="image" style="width: 100%;">
+                    </div>
+                    <div class="col-sm-6">
+                        <h1 id="title">Title </h1>
+                        <h3>$<span id="price">Price</span></h3>
+                        <p class="text-left" id="desc">Description</p>
+                        <input type="number" min="1"  class="form-control mb-2" id="quantity" placeholder="Quantity">
+                        <button class="btn btn-success" onclick="addtoCart()">Add to cart</button>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid">
+        <footer>
+            <div class="row">
+                <div class="col-sm-12 bg-white footer1">
+                    <div class="row">
+                        <div class="col-sm-10 mx-auto footer2 mt-5">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h5>Recently viewed</h5>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small>You have no recently viewed item.</small>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="">View all products</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 mx-auto footer3 mt-5">
+                    <div class="row">
+                        <div class="col-sm-6 footer4 d-flex">
+                            <div>
+                                <img src="image/news.png">
+                            </div>
+                            <div>
+                                <small><b>Subscribe Newsletter</b> <br>
+                                    Don't miss out thousands of great deals & promotions</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 footer4 ">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <input type="email" placeholder="Input your email here"
+                                        class="form-control newsmail">
+                                </div>
+                                <div class="col-sm-4 btn_foot ">
+                                    <button class="btn btn-danger">Subscribe</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 mx-auto footer5 mt-5">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <small>© 2022 fourteen06. All Rights Reserved.</small>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="image/Payment.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </footer>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script>
+
+</script>
+
+
+
+
+
+
+<script src="bootstrp4/jquery.min.js"></script>
+<script src="bootstrp4/bootstrap.min.js"></script>
+<script src="bootstrp4/popper.min.js"></script>
+<script src="productt.js"></script>
+
+<script>
+
+    var url_string = window.location;
+    var url = new URL(url_string)
+    var itemid = url.searchParams.get("itemid");
+
+    //localStorage.clear();
+
+  
+    function countCart() {
+        let counter = localStorage.length;
+        document.getElementById("counter").innerHTML = counter;
+        document.getElementById("counter2").innerHTML = counter;
+       // document.getElementById("countermobile").innerHTML = counter;
+        document.getElementById("countermobile2").innerHTML = counter;
+   
+    }
+    countCart();
+
+ 
+
+
+    function fetchSingleItem() {
+        fetch("https://fakestoreapi.com/products/" + itemid).then(
+            res => {
+                res.json().then(
+                    data => {
+                        console.log(data);
+                        document.getElementById('title').innerHTML = (data['title']);
+                        document.getElementById('price').innerHTML = (data['price']);
+                        document.getElementById('desc').innerHTML = (data['description']);
+                        document.getElementById('image').src = (data['image']);
+                    }
+                )
+            }
+        )
+
+    }
+    fetchSingleItem();
+
+
+    function addtoCart() {
+        title = document.getElementById("title").innerText;
+        price = document.getElementById("price").innerText;
+        image = document.getElementById("image").src;
+        quantity = document.getElementById("quantity").value;
+        //console.log("cart");
+
+        const cart = {
+            "title": title,
+            "price": price,
+            "image": image,
+            "quantity": quantity
+        }
+        window.localStorage.setItem(itemid, JSON.stringify(cart));
+        allCart();
+        countCart();
+        //alert("Item added!");
+    }
+
+    function allCart() {
+        document.getElementById("cart").innerHTML = "";
+        var cart = [];
+        for (var i = 0; i < localStorage.length; i++) {
+            cart = JSON.parse(localStorage.getItem(localStorage.key(i)));
+
+            document.getElementById("cart").innerHTML += '<div class="dropdown-item"> <div class="row"> <img src="' + cart.image + '" alt="" class="col-sm-3"> <div class="col-sm-9"> <button onclick="removeCart(' + localStorage.key(i) + ')" class="btn btn-sm btn-danger float-right"> &times;</button> <p class="float-left">' + cart.title + '</p> <p style="clear:left;"><small>$' + cart.price * cart.quantity + '</small></p>  </div> </div> </div>';
+        }
+    }
+    allCart();
+
+
+    function removeCart(id) {
+        localStorage.removeItem(id);
+        allCart();
+        countCart();
+        alert("Item removed!");
+    }
+
+    function clearCart(id) {
+        localStorage.clear(id);
+        allCart();
+        countCart();
+       // alert("Item cleared!");
+    }
+
+ /*    function allCart() {
+        document.getElementById("cart").innerHTML = "";
+        var cart = [];
+        for (var i = 0; i < localStorage.length; i++) {
+            cart = JSON.parse(localStorage.getItem(localStorage.key(i)));
+
+            document.getElementById("cart").innerHTML += '<div class="dropdown-item"> <div class="row"> <img src="' + cart.image + '" alt="" class="col-sm-3"> <div class="col-sm-9"> <button onclick="removeCart(' + localStorage.key(i) + ')" class="btn btn-sm btn-danger float-right"> &times;</button> <p class="float-left">' + cart.title + '</p> <p style="clear:left;"><small>$' + cart.price * cart.quantity + '</small></p>  </div> </div> </div>';
+        }
+    }
+    allCart(); */
+  
+
+</script>
+
+</html>

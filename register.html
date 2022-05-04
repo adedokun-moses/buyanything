@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buyanything.com</title>
+    <link rel="stylesheet" href="bootstrp4/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrp4/fontawesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 top  bg-red">
+                <h5 class="float-right"> <a href="">Explore The Platform </a> <span><a href=""> Log In or Register
+                        </a></span>
+                </h5>
+            </div>
+            <div class="col-sm-11 mx-auto bg-white">
+                <nav class="navbar  navbar-expand-sm">
+
+                    <ul class="navbar-nav  top_nav ">
+                        <li class="nav-item">
+                            <a href="index.html" class="navbar-brand"> Home</a>
+                        </li>
+
+                        <li class="nav-item group_nav">
+
+
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-red"><select name="All" id="products">
+                                            <option value="">All</option>
+                                            <option value="">Automobile</option>
+                                        </select></span>
+                                </div>
+                                <input type="text" class="form-control nav_form" c
+                                    placeholder="Search for your products">
+                                <div class="input-group-prepend input1">
+                                    <a href=""><i class="fa fa-search p-2"> </i></a>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                        <li class="nav-item left_nav">
+                            <a href="" class="nav-link"><i class="fas fa-baby-carriage"></i></a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="" class="nav-link"><i class="fas fa-baby-carriage"></i></a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-sm-12 mx-auto bg-success">
+                <nav class="navbar navbar-expand-sm ">
+                    <ul class="navbar-nav ml-5 homenav  ">
+
+                        <li class="nav-item dropdown ">
+
+
+
+                            <a class="nav-link dropdown-toggler-icon" href="#" id="navbardrop" data-toggle="dropdown">
+                                All Product
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#"><i class="fa fa-phone"></i> <span class="ml-3">Phone
+                                        Accessories</span> </a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-search"></i> <span class="ml-3">Health
+                                        and Beauty</span> </a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-search"></i> <span class="ml-3">Food
+                                        and Groceriees</span> </a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-search"></i> <span class="ml-3">Home
+                                        and Garden </span> </a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-search"></i> <span
+                                        class="ml-3">Fashion and Clothing </span> </a>
+                            </div>
+
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link ml-3"> Home </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link"> Shop </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link"> AbouT Us </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link"> FAQs </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link"> Contact Us </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="" class="nav-link left"> Recently Viewed </a>
+                        </li>
+
+
+
+                    </ul>
+                </nav>
+
+                <nav class="navbar navbar-expand-sm d-block d-sm-none fixed-bottom mobile">
+
+                    <div class="d-flex">
+                        <div class="p-2 m-2">
+
+                            <a href=""> <i class="fa fa-home ml-3"></i>
+                                <h5>
+                                    Home
+                                </h5>
+                            </a>
+                        </div>
+                        <div class="p-2 m-2">
+                            <a href=""> <i class="fa fa-cart-plus ml-3"></i>
+                                <h5>
+                                    Cart
+                                </h5>
+                            </a>
+                        </div>
+                        <div class="p-2 m-2">
+                            <a href=""> <i class="fa fa-credit-card ml-3"></i>
+                                <h5>
+                                    home
+                                </h5>
+                            </a>
+                        </div>
+
+                        <div class="p-2 m-2">
+                            <a href=""> <i class="fa fa-undo ml-3"></i>
+                                <h5>
+                                    Viewed
+                                </h5>
+                            </a>
+
+                        </div>
+
+                        <div class="p-2 m-2">
+                            <a href=""> <i class="fa fa-user ml-3"></i>
+                                <h5>
+                                    Account
+                                </h5>
+                            </a>
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </nav>
+
+            </div>
+        </div>
+
+
+
+
+
+    </header>
+
+
+    <div class="container-fluid ">
+
+        <div class="row form_container ">
+
+            <h2>My Account </h2>
+            <div class="col-sm-4 form_space bg-white ml-auto mr-auto">
+                <form class="logform " id="form">
+                    <h5>Log In </h5>
+                    <p>Input Your Username and Password To Log In </p>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Username" class="form-control" id="username">
+                        <div id="errorUsername"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="input your password" class="form-control" id="password">
+                        <div id="errorPassword"></div>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Remember me
+                        </label>
+                    </div>
+                    <button class="btn btn-danger form-control" onclick="submitform(); /* event.preventDefault(); */">
+                        Log
+                        In</button>
+                    <h4><a href="">Forgot Password</a></h4>
+
+
+
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="col-sm-12 bg-white footer1">
+                    <div class="row">
+                        <div class="col-sm-10 mx-auto footer2 mt-5">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h5>Recently viewed</h5>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small>You have no recently viewed item.</small>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="">View all products</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 mx-auto footer3 mt-5">
+                    <div class="row">
+                        <div class="col-sm-6 footer4 d-flex">
+                            <div>
+                                <img src="image/news.png">
+                            </div>
+                            <div>
+                                <small><b>Subscribe Newsletter</b> <br>
+                                    Don't miss out thousands of great deals & promotions</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 footer4 ">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <input type="email" placeholder="Input your email here"
+                                        class="form-control newsmail">
+                                </div>
+                                <div class="col-sm-4 btn_foot ">
+                                    <button class="btn btn-danger">Subscribe</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 mx-auto footer5 mt-5">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <small>© 2022 fourteen06. All Rights Reserved.</small>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="image/Payment.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<!-- 
+<script>
+
+
+
+
+    submitform();
+    function submitform() {
+
+        var username = document.getElementById('username');
+        var password = document.getElementById('password');
+        var errorUsername = document.getElementById('errorUsername');
+        var errorPassword = document.getElementById('errorPassword');
+
+
+        errorUsername.innerHTML = "";
+        errorPassword.innerHTML = "";
+
+        if (username.value == '') {
+            errorUsername = "Input your user name";
+            return false;
+        }
+        if (password.value == '') {
+            errorPassword = "Input your password";
+            return false;
+        }
+
+        if (password.value.length < 5) {
+            //alert("password must be over 5 character ")
+            errorPassword.innerHTML = "Password must be longer than five character ";
+            return false;
+        }
+
+        if (username.value != "" & password.value != "") {
+            alert("welcome to Buyanything");
+            window.location.href = "index.html"
+        }
+
+
+    }
+
+</script>
+ -->
+
+
+
+<script>
+    fetch('https://fakestoreapi.com/auth/login', {
+        method: 'POST',
+        body: JSON.stringify({
+            username: "mor_2314",
+            password: "83r5^_"
+        })
+    })
+        .then(res => res.json())
+        .then(json => console.log(json))
+</script>
+
+<script src="bootstrp4/jquery.min.js"></script>
+<script src="bootstrp4/bootstrap.min.js"></script>
+<script src="bootstrp4/popper.min.js"></script>
+<script src="productt.js"></script>
+
+</html>

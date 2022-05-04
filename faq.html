@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buyanything.com</title>
+    <link rel="stylesheet" href="bootstrp4/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrp4/fontawesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<style>
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    }
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active,
+    .accordion:hover {
+        background-color: #ccc;
+    }
+
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .accordion:after {
+        content: '\02795';
+        /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+
+    .active:after {
+        content: "\2796";
+        /* Unicode character for "minus" sign (-) */
+    }
+
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .bottom_text h5 {
+        font-size: 15px;
+    }
+</style>
+
+<body>
+
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 top  bg-red">
+                <h5 class="float-right"> <a href="aboutus.html">Explore The Platform </a> <span><a href="log.html"> Log
+                            In or
+                            Register
+                        </a></span>
+                </h5>
+            </div>
+            <div class="col-sm-11 mx-auto bg-white">
+                <nav class="navbar  navbar-expand-sm">
+
+                    <ul class="navbar-nav  top_nav ">
+                        <li class="nav-item">
+                            <a href="" class="navbar-brand"> Buyanything </a>
+                        </li>
+
+                        <li class="nav-item group_nav">
+
+
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-red"><select name="All" id="products">
+                                            <option value="">All</option>
+                                            <option value="">Automobile</option>
+                                        </select></span>
+                                </div>
+                                <input type="text" class="form-control nav_form" c
+                                    placeholder="Search for your products">
+                                <div class="input-group-prepend input1">
+                                    <a href=""><i class="fa fa-search p-2"> </i></a>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                        <li class="nav-item left_nav">
+                            <a href="" class="nav-link"><i class="fas fa-baby-carriage"></i></a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="" class="nav-link"><i class="fas fa-baby-carriage"></i></a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-sm-12 mx-auto bg-success">
+                <nav class="navbar navbar-expand-sm ">
+                    <ul class="navbar-nav ml-5 homenav  ">
+
+                        <li class="nav-item dropdown dropdown_menu ">
+
+
+
+                            <a class="nav-link dropdown-toggler-icon" href="#" id="navbardrop" data-toggle="dropdown">
+                                All Product
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="allproduct.html"><i class="fa fa-phone fa-spin"></i>
+                                    <span class="ml-3">Phone
+                                        Accessories</span> </a>
+                                <a class="dropdown-item" href="allproduct.html"><i class="fa fa-search"></i> <span
+                                        class="ml-3">Health
+                                        and Beauty</span> </a>
+                                <a class="dropdown-item" href="allproduct.html"><i class="fa fa-search"></i> <span
+                                        class="ml-3">Food
+                                        and Groceriees</span> </a>
+                                <a class="dropdown-item" href="allproduct.html"><i class="fa fa-search"></i> <span
+                                        class="ml-3">Home
+                                        and Garden </span> </a>
+                                <a class="dropdown-item" href="allproduct.html"><i class="fa fa-search"></i> <span
+                                        class="ml-3">Fashion and Clothing </span> </a>
+                            </div>
+
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link ml-3"> Home </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="allproduct.html" class="nav-link"> Shop </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="aboutus.html" class="nav-link"> About Us </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="faq.html" class="nav-link"> FAQ </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link"> Contact Us </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="cart.html" class="nav-link left"> Recently Viewed </a>
+                        </li>
+
+                      <!--   <li class="nav-item dropdown">
+                            <a href="#" data-toggle="dropdown" class="nav-link"> Cart (<span id="counter">0</span>) </a>
+                            <ul class="dropdown-menu" style="width:300px;left:auto;right:0;">
+                                <h4 class="p-3">cart (<span id="counter2">0</span>)</h4>
+                                <div id="cart2"></div>
+                            </ul>
+                        </li> -->
+
+                    </ul>
+                </nav>
+
+
+                <nav class="navbar navbar-expand-sm d-block d-sm-none fixed-bottom mobile p-0">
+
+                    <div class="row">
+                        <div class="col-3 p-0 text-center">
+
+                            <a href="index.html"> <i class="fa fa-home "></i>
+
+                            </a>
+                        </div>
+                        <div class="col-3 p-0 text-center">
+                            <a href="cart.html"> <i class="fa fa-cart-plus "></i><small id="countermobile2">(0)</small>
+                            </a>
+                        </div>
+                        <div class="col-3 p-0 text-center">
+                            <a href="contact.html"> <i class="fa fa-credit-card "></i>
+                            </a>
+                        </div>
+
+                        <div class="col-3 p-0 text-center">
+                            <a href="aboutus.html"> <i class="fa fa-user"></i>
+                            </a>
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </nav>
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+    </header>
+
+    <div class="jumbotron-fluid bg-light pb-5 ">
+        <div class="row">
+            <div class="col-sm-12 contact_top">
+                <h2><span><a href="index.html">Home</a></span> / Page</h2>
+                <h1>FAQ </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-10 mx-auto contact_details">
+                <h5 class="pt-5"><b> Frequently Asked Question</b></h5>
+
+                <div id="accordion" class="mt-5">
+
+                    <div class="card">
+                        <div class="card-header ">
+                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                Explore Our Services
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                            <div class="card-body">
+                                <h3>
+                                    We present to you the most up to date – its in-season and on-incline; if it’s on the
+                                    racks,
+                                    it’s on the web. Also, we deliver ASAP to you.
+
+                                    <br> Barely a year from dispatch, ‘Buyanything’ is as of now working to be in the
+                                    Top 20, and one of
+                                    the quickest developing, e-commerce in the nation. <br>
+
+                                    Offering adaptability in the manner in which you shop, ‘Buyanything’ is a
+                                    first-of-its-kind
+                                    e-commerce that serves more with Vocational Traders.
+
+                                    Founded in [2020], Buyanything has come a long way from its beginnings in
+                                    Ikorodu, Lagos. We now serve customers all over the globe.
+                                </h3>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                About Us
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                Buyanything is a Professional e-commerce Platform, which you will like very much. We’re
+                                dedicated to providing you the best of e-Commerce, with a focus on dependability and
+                                Online
+                                Market. We’re working to turn our passion for online sellers and buyer into a
+                                comfortable
+                                marketplace.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                Why You Should I Choose Your Company?
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                Draw in with us in a consistent shopping knowledge crosswise over work area, tablet and
+                                cell
+                                phone. Peruse the best Nigeria and universal brands crosswise over garments and frill
+                                (watches, Clothes, shoes, Food, adornments and then some), devices and home machines.
+
+                                Our Delivery Service is top notch
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+
+                    <h5 class="pt-5"><b>Our Partners</b></h5>
+
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="image/konga.jpg" style="width: 100%; height: 150px;" alt="">
+                                </div>
+        
+                                <div class="col-sm-3">
+                                    <img src="image/jumia.webp" style="width: 100%; height: 150px;">
+                                </div>
+        
+                                <div class="col-sm-3">
+                                    <img src="./image/shopify.jpg" style="width: 100%;height: 150px;" alt="">
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="./image/amazon.png" style="width: 100%;height: 150px;" alt="">
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+
+             
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid">
+
+
+        <footer>
+            <div class="row">
+                <div class="col-sm-12 bg-white footer1">
+                    <div class="row">
+                        <div class="col-sm-10 mx-auto footer2 mt-5">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h5>Recently viewed</h5>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small>You have no recently viewed item.</small>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="">View all products</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 mx-auto footer3 mt-5">
+                    <div class="row">
+                        <div class="col-sm-6 footer4 d-flex">
+                            <div>
+                                <img src="image/news.png">
+                            </div>
+                            <div>
+                                <small><b>Subscribe Newsletter</b> <br>
+                                    Don't miss out thousands of great deals & promotions</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 footer4 ">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <input type="email" placeholder="Input your email here"
+                                        class="form-control newsmail">
+                                </div>
+                                <div class="col-sm-4 btn_foot ">
+                                    <button class="btn btn-danger">Subscribe</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 mx-auto footer5 mt-5">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <small>© 2022 fourteen06. All Rights Reserved.</small>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="image/Payment.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </footer>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+<!-- <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+ -->
+
+
+<script src="bootstrp4/jquery.min.js"></script>
+<script src="bootstrp4/bootstrap.min.js"></script>
+<script src="bootstrp4/popper.min.js"></script>
+<script src="productt.js"></script>
+
+
+
+</html>
